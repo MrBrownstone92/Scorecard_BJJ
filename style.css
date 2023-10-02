@@ -1,0 +1,74 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    background-color: black;
+    text-align: center;
+   padding-top: 5%;
+    font-size: 40px;
+}
+
+#main_container {
+    background-color: black;
+    padding: 8% 8%;
+    display: flex;
+    font-size: 40px;
+    justify-content: space-evenly;
+    border: 2px solid white;
+}
+
+.P1Container {
+    display: inline-block;
+    text-align: center;
+    padding: 8rem;
+    background: rgb(117,33,32);
+    background: radial-gradient(circle, rgba(117,33,32,1) 0%, rgba(0,0,0,1) 100%);
+
+}
+.timer {
+    text-decoration: none;
+    display: inline-block;
+   margin: auto;
+    text-align: center;
+    border: 2px solid red;
+}
+.timer li {
+    list-style-type: none;
+}
+
+.P2Container {
+    display: inline-block;
+    text-align: center;
+    padding: 8rem;
+    background: rgb(52,51,102);
+background: radial-gradient(circle, rgba(52,51,102,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+button {
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+ margin-top: 30px;
+ transition: 0.15;
+}
+
+button:hover {
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+    font-size: 21px;
+}
+
+button:active {
+    background-color: green;
+}
+.pts-shadow {
+    display: none;
+}
+
