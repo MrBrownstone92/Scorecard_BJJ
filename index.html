@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<script src="script.js"> </script>
 <title>BJJ Scorecard</title>
 </head>
 <body>
@@ -15,11 +16,14 @@
     <!-- Player1 -->
     <div class="P1Container">
         <p>Name</p>
-<p>0</p>
-<p class="pts-shadow">000</p>
-    <button>+2</button>
-    <button>+3</button>
-    <button>+4</button>
+<p id="scorep1">0</p>
+<!-- <p class="pts-shadow">000</p> -->
+    <div id="button_container">
+        <button onclick="buttona2()">+2</button>
+        <button onclick="buttona3()">+3</button>
+        <button onclick="buttona4()">+4</button>
+    </div>
+    <button onclick="buttona5()">Reset</button>
 </div>
 <!-- Timer -->
 <div class="timer">
@@ -33,11 +37,68 @@
 <!-- Player2 -->
 <div class="P2Container">
     <p>Name</p>
-<p>0</p>
-<p class="pts-shadow">000</p>
-<button>+2</button>
-<button>+3</button>
-<button>+4</button>
+<p id="scorep2">0</p>
+<!-- <p class="pts-shadow">000</p> -->
+<div id="button_container">
+    <button onclick="buttonb2()">+2</button>
+    <button onclick="buttonb3()">+3</button>
+    <button onclick="buttonb4()">+4</button>
 </div>
+<button onclick="buttonb5()">Reset</button>
+</div>
+
+<script>
+    let playerOneScoreboard = document.getElementById('scorep1')
+    let playerTwoScoreboard = document.getElementById('scorep2')
+
+    let playerTwo = 0
+    let playerOne = 0
+
+    // Player 1 Below
+    
+    function buttona2() {
+        playerOne = playerOne+2
+        playerOneScoreboard.innerText=playerOne
+    }
+
+    function buttona3() {
+        playerOne = playerOne+3
+        playerOneScoreboard.innerText=playerOne
+    }
+
+    function buttona4() {
+        playerOne = playerOne+4
+        playerOneScoreboard.innerText=playerOne
+    }
+
+    function buttona5() {
+        playerOne = 0
+        playerOneScoreboard.innerText=playerOne
+    }
+
+    // Player 2 Below
+
+    function buttonb2() {
+        playerTwo = playerTwo+2
+        playerTwoScoreboard.innerText=playerTwo
+    }
+
+    function buttonb3() {
+        playerTwo = playerTwo+3
+        playerTwoScoreboard.innerText=playerTwo
+    }
+
+    function buttonb4() {
+        playerTwo = playerTwo+4
+        playerTwoScoreboard.innerText=playerTwo
+    }
+
+    function buttonb5() {
+        playerTwo  = 0
+        playerTwoScoreboard.innerText=playerTwo
+    }
+
+</script>
+
 </body>
 </html>
